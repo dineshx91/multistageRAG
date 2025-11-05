@@ -20,9 +20,9 @@ DATA_DIRECTORY = os.path.join(SCRIPT_DIR, "..", "..", "src_data", "dataframes") 
 
 # Qdrant Client Configuration
 
-QDRANT_HOST = "80c19288-7776-4824-8a9b-1fb04c7423b3.eu-central-1-0.aws.cloud.qdrant.io"
+QDRANT_HOST = os.getenv("QDRANT_HOST_URL")
 QDRANT_API_KEY = os.getenv("QDRANT_API_KEY_M")
-COLLECTION_NAME = "LC_LG_collection"
+COLLECTION_NAME = "multi_stageRAG"
 DENSE_VECTOR_NAME = "dense_vector"
 SPARSE_VECTOR_NAME = "sparse_vector"
 
