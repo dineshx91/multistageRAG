@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "multi-stage-rag"
+version = "0.1.0"
+description = "A multi-stage Retrieval-Augmented Generation system with Qdrant vector database integration"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^2.0.0"
+python-dotenv = "^1.0.0"
+qdrant-client = "^1.6.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.0.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
